@@ -21,6 +21,9 @@ export const App = () => {
   };
 
   useEffect(() => {
+    if (val === '') {
+      return;
+    }
     getImages(val, page);
   }, [val, page]);
 
