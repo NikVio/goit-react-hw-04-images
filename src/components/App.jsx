@@ -69,7 +69,7 @@ export const App = () => {
           backgroundColor="#F4442E"
         />
       )}
-      {val && <ImageGallery images={images} />}
+      <ImageGallery images={images} />
       {images.length && total > images.length && val !== '' && (
         <Button onClick={handleLoadMore} btnText="Load More" />
       )}
